@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0C8A7B1F1209C800D136B8 /* MusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C8A7A1F1209C800D136B8 /* MusicPlayerController.swift */; };
+		7B0C8A7E1F1226B500D136B8 /* VolumeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */; };
+		7B0C8A811F122CBB00D136B8 /* VolumeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */; };
 		7B50E61F1F11396C003B44D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E61E1F11396C003B44D3 /* AppDelegate.swift */; };
 		7B50E6211F11396C003B44D3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E6201F11396C003B44D3 /* FirstViewController.swift */; };
 		7B50E6231F11396C003B44D3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E6221F11396C003B44D3 /* SecondViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B0C8A7A1F1209C800D136B8 /* MusicPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerController.swift; sourceTree = "<group>"; };
+		7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControllerViewController.swift; sourceTree = "<group>"; };
+		7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VolumeController.storyboard; sourceTree = "<group>"; };
 		7B50E61B1F11396C003B44D3 /* WorstVolumeControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorstVolumeControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B50E61E1F11396C003B44D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B50E6201F11396C003B44D3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B0C8A791F12096C00D136B8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		7B0C8A7C1F1225EE00D136B8 /* MusicControll */ = {
+			isa = PBXGroup;
+			children = (
+				7B0C8A7A1F1209C800D136B8 /* MusicPlayerController.swift */,
+			);
+			name = MusicControll;
+			sourceTree = "<group>";
+		};
+		7B0C8A7F1F122A4300D136B8 /* VolumeControll */ = {
+			isa = PBXGroup;
+			children = (
+				7B50E6201F11396C003B44D3 /* FirstViewController.swift */,
+				7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */,
+				7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */,
+			);
+			name = VolumeControll;
+			sourceTree = "<group>";
+		};
 		7B50E6121F11396C003B44D3 = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +111,14 @@
 			isa = PBXGroup;
 			children = (
 				7B50E61E1F11396C003B44D3 /* AppDelegate.swift */,
-				7B50E6201F11396C003B44D3 /* FirstViewController.swift */,
-				7B50E6221F11396C003B44D3 /* SecondViewController.swift */,
 				7B50E6241F11396C003B44D3 /* Main.storyboard */,
+				7B0C8A7C1F1225EE00D136B8 /* MusicControll */,
+				7B0C8A7F1F122A4300D136B8 /* VolumeControll */,
+				7B50E6221F11396C003B44D3 /* SecondViewController.swift */,
 				7B50E6271F11396C003B44D3 /* Assets.xcassets */,
 				7B50E6291F11396C003B44D3 /* LaunchScreen.storyboard */,
 				7B50E62C1F11396C003B44D3 /* Info.plist */,
+				7B0C8A791F12096C00D136B8 /* resource */,
 			);
 			path = WorstVolumeControllers;
 			sourceTree = "<group>";
@@ -109,6 +142,7 @@
 				7B50E6171F11396C003B44D3 /* Sources */,
 				7B50E6181F11396C003B44D3 /* Frameworks */,
 				7B50E6191F11396C003B44D3 /* Resources */,
+				7B0C8A781F11FAC100D136B8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,12 +177,16 @@
 		7B50E6131F11396C003B44D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = MURAKAMI;
 				TargetAttributes = {
 					7B50E61A1F11396C003B44D3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AFZF43X7V9;
 						ProvisioningStyle = Automatic;
 					};
 					7B50E6301F11396C003B44D3 = {
@@ -183,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B50E62B1F11396C003B44D3 /* LaunchScreen.storyboard in Resources */,
+				7B0C8A811F122CBB00D136B8 /* VolumeController.storyboard in Resources */,
 				7B50E6281F11396C003B44D3 /* Assets.xcassets in Resources */,
 				7B50E6261F11396C003B44D3 /* Main.storyboard in Resources */,
 			);
@@ -197,12 +236,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B0C8A781F11FAC100D136B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B50E6171F11396C003B44D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0C8A7B1F1209C800D136B8 /* MusicPlayerController.swift in Sources */,
 				7B50E6231F11396C003B44D3 /* SecondViewController.swift in Sources */,
+				7B0C8A7E1F1226B500D136B8 /* VolumeControllerViewController.swift in Sources */,
 				7B50E61F1F11396C003B44D3 /* AppDelegate.swift in Sources */,
 				7B50E6211F11396C003B44D3 /* FirstViewController.swift in Sources */,
 			);
@@ -343,7 +400,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFZF43X7V9;
 				INFOPLIST_FILE = WorstVolumeControllers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = murakamiii.WorstVolumeControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,7 +414,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFZF43X7V9;
 				INFOPLIST_FILE = WorstVolumeControllers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = murakamiii.WorstVolumeControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +471,7 @@
 				7B50E63C1F11396C003B44D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B50E63D1F11396C003B44D3 /* Build configuration list for PBXNativeTarget "WorstVolumeControllersTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +480,7 @@
 				7B50E63F1F11396C003B44D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
