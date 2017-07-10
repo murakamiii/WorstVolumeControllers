@@ -10,6 +10,7 @@
 		7B0C8A7B1F1209C800D136B8 /* MusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C8A7A1F1209C800D136B8 /* MusicPlayerController.swift */; };
 		7B0C8A7E1F1226B500D136B8 /* VolumeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */; };
 		7B0C8A811F122CBB00D136B8 /* VolumeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */; };
+		7B0C8A831F13C02800D136B8 /* ViewMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C8A821F13C02800D136B8 /* ViewMapper.swift */; };
 		7B50E61F1F11396C003B44D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E61E1F11396C003B44D3 /* AppDelegate.swift */; };
 		7B50E6211F11396C003B44D3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E6201F11396C003B44D3 /* FirstViewController.swift */; };
 		7B50E6231F11396C003B44D3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E6221F11396C003B44D3 /* SecondViewController.swift */; };
@@ -33,6 +34,7 @@
 		7B0C8A7A1F1209C800D136B8 /* MusicPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerController.swift; sourceTree = "<group>"; };
 		7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControllerViewController.swift; sourceTree = "<group>"; };
 		7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VolumeController.storyboard; sourceTree = "<group>"; };
+		7B0C8A821F13C02800D136B8 /* ViewMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMapper.swift; sourceTree = "<group>"; };
 		7B50E61B1F11396C003B44D3 /* WorstVolumeControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorstVolumeControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B50E61E1F11396C003B44D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B50E6201F11396C003B44D3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				7B50E6201F11396C003B44D3 /* FirstViewController.swift */,
 				7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */,
 				7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */,
+				7B0C8A821F13C02800D136B8 /* ViewMapper.swift */,
 			);
 			name = VolumeControll;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				7B0C8A7E1F1226B500D136B8 /* VolumeControllerViewController.swift in Sources */,
 				7B50E61F1F11396C003B44D3 /* AppDelegate.swift in Sources */,
 				7B50E6211F11396C003B44D3 /* FirstViewController.swift in Sources */,
+				7B0C8A831F13C02800D136B8 /* ViewMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

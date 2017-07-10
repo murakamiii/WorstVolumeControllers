@@ -11,7 +11,7 @@ import UIKit
 class FirstViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak private var volumeControllUICollection: UICollectionView!
-    let firstViewMusicPlayerController: MusicPlayerController = MusicPlayerController.sharedSingleton
+    let firstViewMusicPlayerController: MusicPlayerController = MusicPlayerController.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,5 +17,12 @@ final class MusicPlayerController {
         player.repeatMode = .all
         player.play()
     }
-    static let sharedSingleton = MusicPlayerController()
+    static let sharedInstance = MusicPlayerController()
+    
+    func setVolume(volume :Float) {
+        let volumeView = MPVolumeView()
+        if let view = volumeView.subviews.first as? UISlider {
+            view.value = volume
+        }
+    }
 }
