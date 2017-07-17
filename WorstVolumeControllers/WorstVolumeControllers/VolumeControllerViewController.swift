@@ -12,7 +12,7 @@ import UIKit
 
 class VolumeControllerViewController: UIViewController {
     var label: UILabel?
-    let player: MusicPlayerController = MusicPlayerController.sharedInstance
+    let mpController: MusicPlayerController = MusicPlayerController.sharedInstance
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,9 +20,33 @@ class VolumeControllerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         createVolumeSwitch()
         createVolumeLabel()
+        setSystemVoiceObserver()
+    }
+    
+    func setSystemVoiceObserver() {
+        let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setCategory(AVAudioSessionCategoryAmbient)
+        try! audioSession.setActive(true)
+        
+        audioSession.addObserver(self, forKeyPath: "outputVolume", options: .new, context: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
+        audioSession.removeObserver(self, forKeyPath: "outputVolume", context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "outputVolume" {
+            let i: UInt32 = UInt32(change![.newKey]! as! Float * 100)
+            setVolumeLabelText(i)
+        }
     }
     
     func createVolumeSwitch() {
@@ -50,8 +74,10 @@ class VolumeControllerViewController: UIViewController {
     func onTapVolumeswitch(_ sender: UIButton) {
         let intValue: UInt32 = arc4random_uniform(101)
         let floatValue: Float = Float(intValue) / 101
-        print(floatValue)
-        player.setVolume(floatValue)
+        mpController.setVolume(floatValue)
+    }
+    
+    func setVolumeLabelText(_ intValue: UInt32) {
         if let lb = label {
             lb.text = "Current Volume Level: \(intValue)%"
         }
