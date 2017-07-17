@@ -9,7 +9,10 @@
 import UIKit
 
 class FirstViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+    let VCArray: [String] = ["VolumeController"
+                             , "VolumeControllerBalance"
+                            ]
+    
     @IBOutlet weak private var volumeControllUICollection: UICollectionView!
     let firstViewMusicPlayerController: MusicPlayerController = MusicPlayerController.sharedInstance
 
@@ -30,23 +33,18 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
 
     // MARK: collectionview
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return VCArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
-//        let textLabel: UILabel = UILabel()
-//        textLabel.text = "V"
-//        
-//        cell.contentView .addSubview(textLabel)
-        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc: UIViewController? = UIStoryboard(name: "VolumeController", bundle:nil ).instantiateInitialViewController()
-        if let vcvc = vc as? VolumeControllerViewController {
+        let vc: UIViewController? = UIStoryboard(name: VCArray[indexPath.row], bundle: nil).instantiateInitialViewController()
+        if let vcvc = vc {
             self.navigationController?.pushViewController(vcvc, animated: true)
         }
     }

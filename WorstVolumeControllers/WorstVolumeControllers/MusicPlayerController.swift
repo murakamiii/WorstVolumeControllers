@@ -19,7 +19,7 @@ final class MusicPlayerController {
     }
     static let sharedInstance = MusicPlayerController()
     
-    func setVolume(volume :Float) {
+    func setVolume(_ volume: Float) {
         let volumeView = MPVolumeView()
         if let view = volumeView.subviews.first as? UISlider {
             view.value = volume

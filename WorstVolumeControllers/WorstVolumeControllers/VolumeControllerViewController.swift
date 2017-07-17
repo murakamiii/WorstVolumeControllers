@@ -11,7 +11,6 @@ import Foundation
 import UIKit
 
 class VolumeControllerViewController: UIViewController {
-    var soundController: Int?
     var label: UILabel?
     let player: MusicPlayerController = MusicPlayerController.sharedInstance
     override func viewDidLoad() {
@@ -49,10 +48,10 @@ class VolumeControllerViewController: UIViewController {
     }
     
     func onTapVolumeswitch(_ sender: UIButton) {
-        let intValue: UInt32 = arc4random_uniform(100)
-        let floatValue: Float = Float(intValue) / 100
+        let intValue: UInt32 = arc4random_uniform(101)
+        let floatValue: Float = Float(intValue) / 101
         print(floatValue)
-        player.setVolume(volume: floatValue)
+        player.setVolume(floatValue)
         if let lb = label {
             lb.text = "Current Volume Level: \(intValue)%"
         }

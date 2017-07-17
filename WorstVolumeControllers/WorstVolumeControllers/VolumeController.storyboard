@@ -12,7 +12,6 @@
         <!--Volume Controller View Controller-->
         <scene sceneID="D8f-nH-Yej">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j2i-Ow-MOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Fad-gh-kNI" customClass="VolumeControllerViewController" customModule="WorstVolumeControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kcZ-Lu-n4I"/>
@@ -31,6 +30,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2i-Ow-MOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="796" y="-22.03898050974513"/>
         </scene>
@@ -40,7 +40,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="FirstViewController" id="Oiv-UE-HLQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BgY-3a-7Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="-463"/>
+            <point key="canvasLocation" x="1467" y="-22"/>
         </scene>
     </scenes>
 </document>

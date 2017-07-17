@@ -18,6 +18,8 @@
 		7B50E6281F11396C003B44D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B50E6271F11396C003B44D3 /* Assets.xcassets */; };
 		7B50E62B1F11396C003B44D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B50E6291F11396C003B44D3 /* LaunchScreen.storyboard */; };
 		7B50E6361F11396C003B44D3 /* WorstVolumeControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50E6351F11396C003B44D3 /* WorstVolumeControllersTests.swift */; };
+		7B5B80AA1F151FA3008A2A93 /* VolumeControllerBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B80A91F151FA3008A2A93 /* VolumeControllerBalance.swift */; };
+		7B5B80AC1F152308008A2A93 /* VolumeControllerBalance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5B80AB1F152308008A2A93 /* VolumeControllerBalance.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		7B50E6311F11396C003B44D3 /* WorstVolumeControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorstVolumeControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B50E6351F11396C003B44D3 /* WorstVolumeControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorstVolumeControllersTests.swift; sourceTree = "<group>"; };
 		7B50E6371F11396C003B44D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5B80A91F151FA3008A2A93 /* VolumeControllerBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControllerBalance.swift; sourceTree = "<group>"; };
+		7B5B80AB1F152308008A2A93 /* VolumeControllerBalance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VolumeControllerBalance.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +88,10 @@
 		7B0C8A7F1F122A4300D136B8 /* VolumeControll */ = {
 			isa = PBXGroup;
 			children = (
-				7B50E6201F11396C003B44D3 /* FirstViewController.swift */,
-				7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */,
-				7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */,
 				7B0C8A821F13C02800D136B8 /* ViewMapper.swift */,
+				7B50E6201F11396C003B44D3 /* FirstViewController.swift */,
+				7B5B80A71F151F4B008A2A93 /* VC0 */,
+				7B5B80A81F151F5C008A2A93 /* VC1 */,
 			);
 			name = VolumeControll;
 			sourceTree = "<group>";
@@ -133,6 +137,24 @@
 				7B50E6371F11396C003B44D3 /* Info.plist */,
 			);
 			path = WorstVolumeControllersTests;
+			sourceTree = "<group>";
+		};
+		7B5B80A71F151F4B008A2A93 /* VC0 */ = {
+			isa = PBXGroup;
+			children = (
+				7B0C8A801F122CBB00D136B8 /* VolumeController.storyboard */,
+				7B0C8A7D1F1226B500D136B8 /* VolumeControllerViewController.swift */,
+			);
+			name = VC0;
+			sourceTree = "<group>";
+		};
+		7B5B80A81F151F5C008A2A93 /* VC1 */ = {
+			isa = PBXGroup;
+			children = (
+				7B5B80AB1F152308008A2A93 /* VolumeControllerBalance.storyboard */,
+				7B5B80A91F151FA3008A2A93 /* VolumeControllerBalance.swift */,
+			);
+			name = VC1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +249,7 @@
 				7B0C8A811F122CBB00D136B8 /* VolumeController.storyboard in Resources */,
 				7B50E6281F11396C003B44D3 /* Assets.xcassets in Resources */,
 				7B50E6261F11396C003B44D3 /* Main.storyboard in Resources */,
+				7B5B80AC1F152308008A2A93 /* VolumeControllerBalance.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +287,7 @@
 				7B50E6231F11396C003B44D3 /* SecondViewController.swift in Sources */,
 				7B0C8A7E1F1226B500D136B8 /* VolumeControllerViewController.swift in Sources */,
 				7B50E61F1F11396C003B44D3 /* AppDelegate.swift in Sources */,
+				7B5B80AA1F151FA3008A2A93 /* VolumeControllerBalance.swift in Sources */,
 				7B50E6211F11396C003B44D3 /* FirstViewController.swift in Sources */,
 				7B0C8A831F13C02800D136B8 /* ViewMapper.swift in Sources */,
 			);
