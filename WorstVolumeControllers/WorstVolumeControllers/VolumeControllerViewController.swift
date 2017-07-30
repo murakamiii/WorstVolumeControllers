@@ -43,8 +43,8 @@ class VolumeControllerViewController: UIViewController {
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "outputVolume" {
-            let i: UInt32 = UInt32(change![.newKey]! as! Float * 100)
+        if keyPath == "outputVolume", let change = change, let newKey = change[.newKey] as? Float {
+            let i: UInt32 = UInt32(newKey * 100)
             setVolumeLabelText(i)
         }
     }
